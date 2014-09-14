@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Require MVC Template</title>
+        <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap/dist/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+        <script src="./js/lib/require.js"></script>
+        <script>
+            require(['./js/common'], function (common) {
+                require(['app/main']);
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- CONTENT -->
+
+            <div id="info-lib" class="well">&copy; COMPANY</div>
+        </div>
+    </body>
+</html>
